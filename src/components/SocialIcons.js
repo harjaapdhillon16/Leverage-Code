@@ -11,6 +11,9 @@ const Container = styled.div`
       color: ${theme.lightRed};
     }
   }
+  .footerIcon {
+    color: ${theme.lightRed};
+  }
 `;
 const Icons = [
   {
@@ -24,16 +27,39 @@ const Icons = [
   },
 ];
 
-const SocialIcons = () => {
+const Icons2 = [
+  {
+    icon: "fab fa-facebook-f",
+  },
+  {
+    icon: "fab fa-instagram",
+  },
+  {
+    icon: "fab fa-twitter",
+  },
+  {
+    icon: "fab fa-linkedin-in",
+  },
+];
+
+const SocialIcons = ({ footer }) => {
   return (
-    <Container className='columns'>
-      {Icons.map((item) => (
-        <div className='column is-4'>
-          <span className='icon is-size-5'>
-            <i className={item.icon} />
-          </span>
-        </div>
-      ))}
+    <Container className='columns is-mobile'>
+      {footer
+        ? Icons2.map((item) => (
+            <div className='column is-3'>
+              <span className='icon is-size-5 footerIcon'>
+                <i className={item.icon} />
+              </span>
+            </div>
+          ))
+        : Icons.map((item) => (
+            <div className='column is-4'>
+              <span className='icon is-size-5'>
+                <i className={item.icon} />
+              </span>
+            </div>
+          ))}
     </Container>
   );
 };

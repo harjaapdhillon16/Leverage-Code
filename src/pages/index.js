@@ -8,7 +8,10 @@ import Features from "../components/features";
 import About from "../components/About";
 import WatchVideo from "../components/WatchVideo";
 import BestSkills from "../components/BestSkills";
+import BestServices from "../components/BestServices";
 import PlansAndPricing from "../components/PlansAndPricing";
+import OurPortfolio from "../components/OurPortfolio";
+import LetsTalk from "../components/LetsTalk";
 
 import { theme } from "../utils/theme";
 
@@ -32,7 +35,10 @@ export default class IndexPage extends React.Component {
           <About />
           <WatchVideo />
           <BestSkills />
+          <BestServices />
           <PlansAndPricing />
+          <OurPortfolio />
+          <LetsTalk />
         </Section>
       </Layout>
     );

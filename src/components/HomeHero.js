@@ -30,7 +30,11 @@ const Container = styled.div`
       }
     }
     display: inline-block;
-    background: radial-gradient(${theme.primaryColor}, ${theme.lightRed});
+    background: linear-gradient(
+      90deg,
+      ${theme.mainBrandColor} 0%,
+      ${theme.lightRed} 52%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
