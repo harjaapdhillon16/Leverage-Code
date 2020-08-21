@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Seo from "../components/Seo";
 import Layout from "../components/Layout";
 import HomeHero from "../components/HomeHero";
-import Features from "../components/features";
+import Features from "../components/Features";
 import About from "../components/About";
 import WatchVideo from "../components/WatchVideo";
 import BestSkills from "../components/BestSkills";
